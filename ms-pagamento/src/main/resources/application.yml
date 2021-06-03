@@ -1,0 +1,21 @@
+server-port: 8083
+
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:file:~/test-p
+    username: sa
+    password:
+    driverClassName: org.h2.Driver
+  application:
+    name: ms-pagamento
+
+
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
